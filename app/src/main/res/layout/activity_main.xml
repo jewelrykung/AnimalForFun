@@ -41,11 +41,11 @@
         android:textColor="@android:color/holo_orange_dark"
         android:textSize="@dimen/h2"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintBaseline_toBaselineOf="@+id/editText"
-        app:layout_constraintRight_toLeftOf="@+id/editText" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtname"
+        app:layout_constraintRight_toLeftOf="@+id/txtname" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/txtname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -57,12 +57,13 @@
         app:layout_constraintLeft_toRightOf="@+id/textView2" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnstart"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:background="@color/colorPrimary"
+        android:onClick="startgame"
         android:text="Start Game"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
